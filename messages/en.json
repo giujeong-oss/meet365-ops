@@ -1,0 +1,96 @@
+{
+  "common": {
+    "appName": "Meet365 OPS",
+    "loading": "Loading...",
+    "save": "Save",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "delete": "Delete",
+    "edit": "Edit",
+    "add": "Add",
+    "search": "Search",
+    "filter": "Filter",
+    "all": "All",
+    "none": "None",
+    "yes": "Yes",
+    "no": "No",
+    "kg": "kg",
+    "ea": "ea"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "orders": "Orders",
+    "production": "Production",
+    "inventory": "Inventory",
+    "release": "Release",
+    "dispatch": "Dispatch",
+    "monitor": "Monitor",
+    "settings": "Settings"
+  },
+  "orders": {
+    "title": "Order Management",
+    "newOrder": "New Order",
+    "orderList": "Order List",
+    "customer": "Customer",
+    "deliveryDate": "Delivery Date",
+    "status": "Status",
+    "totalWeight": "Total Weight",
+    "items": "Items"
+  },
+  "production": {
+    "title": "Production Management",
+    "batch": "Production Batch",
+    "record": "Production Record",
+    "category": "Category",
+    "ordered": "Ordered",
+    "actual": "Actual",
+    "worker": "Worker",
+    "photo": "Photo"
+  },
+  "inventory": {
+    "title": "Inventory Management",
+    "dashboard": "Inventory Dashboard",
+    "rawStock": "Raw Stock",
+    "productStock": "Product Stock",
+    "receive": "Receive",
+    "count": "Count",
+    "adjust": "Adjust",
+    "history": "History",
+    "quantity": "Quantity",
+    "available": "Available",
+    "reserved": "Reserved",
+    "expiry": "Expiry Date",
+    "lot": "Lot No.",
+    "warehouse": "Warehouse",
+    "accuracy": "Accuracy"
+  },
+  "release": {
+    "title": "Release Management",
+    "pending": "Pending",
+    "confirm": "Confirm Release",
+    "released": "Released"
+  },
+  "dispatch": {
+    "title": "Dispatch Management",
+    "route": "Route",
+    "vehicle": "Vehicle",
+    "driver": "Driver",
+    "stops": "Stops"
+  },
+  "status": {
+    "ordered": "Ordered",
+    "producing": "Producing",
+    "produced": "Produced",
+    "released": "Released",
+    "dispatched": "Dispatched",
+    "delivered": "Delivered"
+  },
+  "categories": {
+    "samgyeop": "Pork Belly",
+    "moksal": "Pork Shoulder",
+    "ansim": "Tenderloin",
+    "deungsim": "Sirloin",
+    "chadol": "Brisket",
+    "galbi": "Ribs"
+  }
+}

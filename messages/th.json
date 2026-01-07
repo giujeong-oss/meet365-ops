@@ -1,0 +1,96 @@
+{
+  "common": {
+    "appName": "Meet365 OPS",
+    "loading": "กำลังโหลด...",
+    "save": "บันทึก",
+    "cancel": "ยกเลิก",
+    "confirm": "ยืนยัน",
+    "delete": "ลบ",
+    "edit": "แก้ไข",
+    "add": "เพิ่ม",
+    "search": "ค้นหา",
+    "filter": "กรอง",
+    "all": "ทั้งหมด",
+    "none": "ไม่มี",
+    "yes": "ใช่",
+    "no": "ไม่",
+    "kg": "กก.",
+    "ea": "ชิ้น"
+  },
+  "nav": {
+    "dashboard": "แดชบอร์ด",
+    "orders": "คำสั่งซื้อ",
+    "production": "การผลิต",
+    "inventory": "คลังสินค้า",
+    "release": "จัดส่ง",
+    "dispatch": "จัดรถ",
+    "monitor": "หน้าจอแสดงผล",
+    "settings": "ตั้งค่า"
+  },
+  "orders": {
+    "title": "จัดการคำสั่งซื้อ",
+    "newOrder": "รับคำสั่งซื้อ",
+    "orderList": "รายการคำสั่งซื้อ",
+    "customer": "ลูกค้า",
+    "deliveryDate": "วันส่ง",
+    "status": "สถานะ",
+    "totalWeight": "น้ำหนักรวม",
+    "items": "รายการ"
+  },
+  "production": {
+    "title": "จัดการการผลิต",
+    "batch": "ชุดการผลิต",
+    "record": "บันทึกการผลิต",
+    "category": "ประเภท",
+    "ordered": "สั่งซื้อ",
+    "actual": "จริง",
+    "worker": "พนักงาน",
+    "photo": "รูปภาพ"
+  },
+  "inventory": {
+    "title": "จัดการคลังสินค้า",
+    "dashboard": "แดชบอร์ดคลังสินค้า",
+    "rawStock": "วัตถุดิบ",
+    "productStock": "สินค้าสำเร็จรูป",
+    "receive": "รับเข้า",
+    "count": "ตรวจนับ",
+    "adjust": "ปรับปรุง",
+    "history": "ประวัติ",
+    "quantity": "จำนวน",
+    "available": "พร้อมใช้",
+    "reserved": "จองไว้",
+    "expiry": "วันหมดอายุ",
+    "lot": "Lot",
+    "warehouse": "โกดัง",
+    "accuracy": "ความแม่นยำ"
+  },
+  "release": {
+    "title": "จัดการจัดส่ง",
+    "pending": "รอจัดส่ง",
+    "confirm": "ยืนยันจัดส่ง",
+    "released": "จัดส่งแล้ว"
+  },
+  "dispatch": {
+    "title": "จัดการจัดรถ",
+    "route": "เส้นทาง",
+    "vehicle": "รถ",
+    "driver": "คนขับ",
+    "stops": "จุดส่ง"
+  },
+  "status": {
+    "ordered": "รับคำสั่งซื้อ",
+    "producing": "กำลังผลิต",
+    "produced": "ผลิตเสร็จ",
+    "released": "จัดส่งแล้ว",
+    "dispatched": "จัดรถแล้ว",
+    "delivered": "ส่งถึงแล้ว"
+  },
+  "categories": {
+    "samgyeop": "สามชั้น",
+    "moksal": "คอหมู",
+    "ansim": "เนื้อสัน",
+    "deungsim": "สันนอก",
+    "chadol": "ชาโดล",
+    "galbi": "ซี่โครง"
+  }
+}

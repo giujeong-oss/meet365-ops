@@ -1,0 +1,96 @@
+{
+  "common": {
+    "appName": "Meet365 OPS",
+    "loading": "ခဏစောင့်ပါ...",
+    "save": "သိမ်းဆည်း",
+    "cancel": "ပယ်ဖျက်",
+    "confirm": "အတည်ပြု",
+    "delete": "ဖျက်",
+    "edit": "ပြင်ဆင်",
+    "add": "ထည့်",
+    "search": "ရှာဖွေ",
+    "filter": "စစ်ထုတ်",
+    "all": "အားလုံး",
+    "none": "မရှိ",
+    "yes": "ဟုတ်",
+    "no": "မဟုတ်",
+    "kg": "ကီလို",
+    "ea": "ခု"
+  },
+  "nav": {
+    "dashboard": "ဒက်ရှ်ဘုတ်",
+    "orders": "အော်ဒါ",
+    "production": "ထုတ်လုပ်ရေး",
+    "inventory": "ကုန်ပစ္စည်း",
+    "release": "ထုတ်ပေး",
+    "dispatch": "ကားစီစဉ်",
+    "monitor": "မော်နီတာ",
+    "settings": "ဆက်တင်"
+  },
+  "orders": {
+    "title": "အော်ဒါစီမံခန့်ခွဲမှု",
+    "newOrder": "အော်ဒါလက်ခံ",
+    "orderList": "အော်ဒါစာရင်း",
+    "customer": "ဖောက်သည်",
+    "deliveryDate": "ပို့ဆောင်ရက်",
+    "status": "အခြေအနေ",
+    "totalWeight": "စုစုပေါင်းအလေးချိန်",
+    "items": "ပစ္စည်း"
+  },
+  "production": {
+    "title": "ထုတ်လုပ်ရေးစီမံခန့်ခွဲမှု",
+    "batch": "ထုတ်လုပ်မှုအစု",
+    "record": "ထုတ်လုပ်မှုမှတ်တမ်း",
+    "category": "အမျိုးအစား",
+    "ordered": "မှာယူထား",
+    "actual": "အမှန်တကယ်",
+    "worker": "လုပ်သား",
+    "photo": "ဓာတ်ပုံ"
+  },
+  "inventory": {
+    "title": "ကုန်ပစ္စည်းစီမံခန့်ခွဲမှု",
+    "dashboard": "ကုန်ပစ္စည်းဒက်ရှ်ဘုတ်",
+    "rawStock": "ကုန်ကြမ်း",
+    "productStock": "ကုန်ချောပစ္စည်း",
+    "receive": "လက်ခံ",
+    "count": "စစ်ဆေး",
+    "adjust": "ချိန်ညှိ",
+    "history": "မှတ်တမ်း",
+    "quantity": "အရေအတွက်",
+    "available": "ရရှိနိုင်",
+    "reserved": "ကြိုတင်မှာ",
+    "expiry": "သက်တမ်းကုန်ရက်",
+    "lot": "Lot",
+    "warehouse": "ဂိုဒေါင်",
+    "accuracy": "တိကျမှု"
+  },
+  "release": {
+    "title": "ထုတ်ပေးရေးစီမံခန့်ခွဲမှု",
+    "pending": "စောင့်ဆိုင်း",
+    "confirm": "အတည်ပြု",
+    "released": "ထုတ်ပြီး"
+  },
+  "dispatch": {
+    "title": "ကားစီစဉ်ရေး",
+    "route": "လမ်းကြောင်း",
+    "vehicle": "ကား",
+    "driver": "ယာဉ်မောင်း",
+    "stops": "ပို့ဆောင်နေရာ"
+  },
+  "status": {
+    "ordered": "အော်ဒါလက်ခံ",
+    "producing": "ထုတ်လုပ်နေ",
+    "produced": "ထုတ်လုပ်ပြီး",
+    "released": "ထုတ်ပြီး",
+    "dispatched": "ကားစီစဉ်ပြီး",
+    "delivered": "ပို့ဆောင်ပြီး"
+  },
+  "categories": {
+    "samgyeop": "ဝက်ဗိုက်",
+    "moksal": "လည်ပင်း",
+    "ansim": "အသား",
+    "deungsim": "ကျောသား",
+    "chadol": "ချာဒိုး",
+    "galbi": "နံရိုး"
+  }
+}

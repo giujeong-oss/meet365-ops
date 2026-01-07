@@ -1,0 +1,106 @@
+{
+  "common": {
+    "appName": "Meet365 OPS",
+    "loading": "로딩중...",
+    "save": "저장",
+    "cancel": "취소",
+    "confirm": "확인",
+    "delete": "삭제",
+    "edit": "수정",
+    "add": "추가",
+    "search": "검색",
+    "filter": "필터",
+    "all": "전체",
+    "none": "없음",
+    "yes": "예",
+    "no": "아니오",
+    "kg": "kg",
+    "ea": "개"
+  },
+  "nav": {
+    "dashboard": "대시보드",
+    "orders": "주문",
+    "production": "생산",
+    "inventory": "재고",
+    "release": "출고",
+    "dispatch": "배차",
+    "monitor": "현황판",
+    "settings": "설정"
+  },
+  "orders": {
+    "title": "주문 관리",
+    "newOrder": "주문 접수",
+    "orderList": "주문 목록",
+    "customer": "고객",
+    "deliveryDate": "배송일",
+    "status": "상태",
+    "totalWeight": "총 중량",
+    "items": "품목",
+    "selectCustomer": "고객 선택",
+    "selectProduct": "제품 선택",
+    "quantity": "수량",
+    "addItem": "품목 추가",
+    "submit": "주문 등록",
+    "orderSource": "주문 출처",
+    "note": "메모",
+    "zone": "배송 구역",
+    "timeConstraint": "배송 시간",
+    "noOrders": "주문이 없습니다"
+  },
+  "production": {
+    "title": "생산 관리",
+    "batch": "생산 배치",
+    "record": "생산 기록",
+    "category": "부위",
+    "ordered": "주문량",
+    "actual": "실제량",
+    "worker": "작업자",
+    "photo": "사진"
+  },
+  "inventory": {
+    "title": "재고 관리",
+    "dashboard": "재고 대시보드",
+    "rawStock": "원육 재고",
+    "productStock": "완제품 재고",
+    "receive": "입고",
+    "count": "실사",
+    "adjust": "조정",
+    "history": "이력",
+    "quantity": "수량",
+    "available": "가용량",
+    "reserved": "예약량",
+    "expiry": "유통기한",
+    "lot": "Lot번호",
+    "warehouse": "창고",
+    "accuracy": "정확도"
+  },
+  "release": {
+    "title": "출고 관리",
+    "pending": "출고 대기",
+    "confirm": "출고 확인",
+    "released": "출고 완료"
+  },
+  "dispatch": {
+    "title": "배차 관리",
+    "route": "배차 루트",
+    "vehicle": "차량",
+    "driver": "기사",
+    "stops": "배송지"
+  },
+  "status": {
+    "ordered": "주문접수",
+    "producing": "생산중",
+    "produced": "생산완료",
+    "released": "출고완료",
+    "dispatched": "배차완료",
+    "delivered": "배송완료"
+  },
+  "categories": {
+    "samgyeop": "삼겹",
+    "moksal": "목살",
+    "ansim": "안심",
+    "deungsim": "등심",
+    "chadol": "차돌",
+    "galbi": "갈비"
+  }
+}

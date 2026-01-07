@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f8fafc;
+  --foreground: #0f172a;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Custom utilities */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Status badge styles */
+@layer components {
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+
+  .badge-ordered {
+    @apply bg-gray-100 text-gray-700;
+  }
+
+  .badge-producing {
+    @apply bg-blue-100 text-blue-700;
+  }
+
+  .badge-produced {
+    @apply bg-green-100 text-green-700;
+  }
+
+  .badge-released {
+    @apply bg-purple-100 text-purple-700;
+  }
+
+  .badge-dispatched {
+    @apply bg-orange-100 text-orange-700;
+  }
+
+  .badge-delivered {
+    @apply bg-emerald-100 text-emerald-700;
+  }
+}
