@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useCallback } from 'react';
 import { useTranslations } from 'next-intl';
+import { useParams } from 'next/navigation';
 import Link from 'next/link';
 import { Plus, Calendar, RefreshCw } from 'lucide-react';
 import { PageHeader, Button, Card } from '@/components/ui';
@@ -19,6 +20,8 @@ const STATUS_FILTERS: { value: OrderStatus | 'all'; label: string }[] = [
 
 export default function OrdersPage() {
   const t = useTranslations('orders');
+  const params = useParams();
+  const locale = params.locale as string;
   const [orders, setOrders] = useState<OrderSummary[]>([]);
   const [loading, setLoading] = useState(true);
   const [selectedDate, setSelectedDate] = useState(() => {
@@ -68,9 +71,9 @@ export default function OrdersPage() {
       <div className="max-w-4xl mx-auto px-4 py-6">
         <PageHeader
           title={t('title')}
-          backHref="/"
+          backHref={`/${locale}`}
           actions={
-            <Link href="/ko/orders/new">
+            <Link href={`/${locale}/orders/new`}>
               <Button>
                 <Plus className="w-4 h-4 mr-1" />
                 {t('newOrder')}

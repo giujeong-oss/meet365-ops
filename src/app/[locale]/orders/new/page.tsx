@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { useRouter } from 'next/navigation';
+import { useRouter, useParams } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import { Plus, Trash2, Save, Wand2, AlertCircle } from 'lucide-react';
 import { PageHeader, Button, Card, Select, Input } from '@/components/ui';
@@ -22,6 +22,8 @@ interface OrderItemForm {
 export default function NewOrderPage() {
   const t = useTranslations('orders');
   const router = useRouter();
+  const params = useParams();
+  const locale = params.locale as string;
 
   const [customers, setCustomers] = useState<CustomerOption[]>([]);
   const [products, setProducts] = useState<ProductOption[]>([]);
@@ -164,7 +166,7 @@ export default function NewOrderPage() {
       });
 
       alert(`주문이 등록되었습니다: ${order.orderId}`);
-      router.push('/ko/orders');
+      router.push(`/${locale}/orders`);
     } catch (error) {
       console.error('Failed to create order:', error);
       alert('주문 등록에 실패했습니다');
@@ -186,7 +188,7 @@ export default function NewOrderPage() {
       <div className="max-w-2xl mx-auto px-4 py-6">
         <PageHeader
           title={t('newOrder')}
-          backHref="/ko/orders"
+          backHref={`/${locale}/orders`}
         />
 
         {/* Customer & Date */}

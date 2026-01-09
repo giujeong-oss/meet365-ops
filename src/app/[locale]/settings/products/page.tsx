@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { useParams } from 'next/navigation';
 import { Plus, Edit2, Trash2, RefreshCw, Package } from 'lucide-react';
 import { PageHeader, Button, Card, Input, Badge } from '@/components/ui';
 import { getProducts, createProduct, updateProduct } from '@/lib/firestore/products';
@@ -24,6 +25,8 @@ const CATEGORY_OPTIONS = [
 ];
 
 export default function ProductsPage() {
+  const params = useParams();
+  const locale = params.locale as string;
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
   const [showForm, setShowForm] = useState(false);
@@ -180,7 +183,7 @@ export default function ProductsPage() {
       <div className="max-w-4xl mx-auto p-4 space-y-4">
         <PageHeader
           title="제품 관리"
-          backHref="/ko/settings"
+          backHref={`/${locale}/settings`}
           actions={
             <Button onClick={() => setShowForm(true)}>
               <Plus className="w-4 h-4 mr-1" />

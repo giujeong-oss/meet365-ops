@@ -38,6 +38,7 @@ const STATUS_FLOW: OrderStatus[] = [
 export default function OrderDetailPage() {
   const params = useParams();
   const router = useRouter();
+  const locale = params.locale as string;
   const orderId = params.orderId as string;
 
   const [order, setOrder] = useState<OrderWithItems | null>(null);
@@ -102,7 +103,7 @@ export default function OrderDetailPage() {
   if (!order) {
     return (
       <div className="min-h-screen bg-gray-50 p-4">
-        <PageHeader title="주문을 찾을 수 없습니다" backHref="/ko/orders" />
+        <PageHeader title="주문을 찾을 수 없습니다" backHref={`/${locale}/orders`} />
         <Card className="text-center py-8">
           <p className="text-gray-500">주문 ID: {orderId}</p>
           <Button variant="secondary" className="mt-4" onClick={() => router.push('/ko/orders')}>
@@ -121,7 +122,7 @@ export default function OrderDetailPage() {
       <div className="max-w-4xl mx-auto p-4 space-y-4">
         <PageHeader
           title={`주문 ${order.orderId}`}
-          backHref="/ko/orders"
+          backHref={`/${locale}/orders`}
         />
 
         {/* Status Card */}

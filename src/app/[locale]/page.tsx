@@ -1,6 +1,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import { useParams } from 'next/navigation';
 import Link from 'next/link';
 import {
   ClipboardList,
@@ -13,14 +14,16 @@ import {
 
 export default function HomePage() {
   const t = useTranslations('nav');
+  const params = useParams();
+  const locale = params.locale as string;
 
   const menuItems = [
-    { href: '/orders', icon: ClipboardList, label: t('orders'), color: 'bg-blue-500' },
-    { href: '/production', icon: Factory, label: t('production'), color: 'bg-green-500' },
-    { href: '/inventory', icon: Package, label: t('inventory'), color: 'bg-purple-500' },
-    { href: '/release', icon: Truck, label: t('release'), color: 'bg-orange-500' },
-    { href: '/monitor', icon: LayoutDashboard, label: t('monitor'), color: 'bg-cyan-500' },
-    { href: '/settings', icon: Settings, label: t('settings'), color: 'bg-gray-500' },
+    { href: `/${locale}/orders`, icon: ClipboardList, label: t('orders'), color: 'bg-blue-500' },
+    { href: `/${locale}/production`, icon: Factory, label: t('production'), color: 'bg-green-500' },
+    { href: `/${locale}/inventory`, icon: Package, label: t('inventory'), color: 'bg-purple-500' },
+    { href: `/${locale}/release`, icon: Truck, label: t('release'), color: 'bg-orange-500' },
+    { href: `/${locale}/monitor`, icon: LayoutDashboard, label: t('monitor'), color: 'bg-cyan-500' },
+    { href: `/${locale}/settings`, icon: Settings, label: t('settings'), color: 'bg-gray-500' },
   ];
 
   return (
@@ -65,12 +68,23 @@ export default function HomePage() {
 }
 
 function LanguageSwitcher() {
+  const params = useParams();
+  const currentLocale = params.locale as string;
+  const locales = ['ko', 'th', 'mm', 'en'];
+
   return (
     <div className="flex gap-2">
-      <Link href="/ko" className="px-2 py-1 text-sm rounded hover:bg-gray-100">KO</Link>
-      <Link href="/th" className="px-2 py-1 text-sm rounded hover:bg-gray-100">TH</Link>
-      <Link href="/mm" className="px-2 py-1 text-sm rounded hover:bg-gray-100">MM</Link>
-      <Link href="/en" className="px-2 py-1 text-sm rounded hover:bg-gray-100">EN</Link>
+      {locales.map((loc) => (
+        <Link
+          key={loc}
+          href={`/${loc}`}
+          className={`px-2 py-1 text-sm rounded hover:bg-gray-100 ${
+            currentLocale === loc ? 'bg-primary-100 text-primary-600 font-medium' : ''
+          }`}
+        >
+          {loc.toUpperCase()}
+        </Link>
+      ))}
     </div>
   );
 }

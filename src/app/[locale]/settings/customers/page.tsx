@@ -1,12 +1,15 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { useParams } from 'next/navigation';
 import { Plus, Edit2, Trash2, RefreshCw, Phone, MapPin, Clock } from 'lucide-react';
 import { PageHeader, Button, Card, Input, Badge } from '@/components/ui';
 import { getCustomers, createCustomer, updateCustomer } from '@/lib/firestore/customers';
 import { Customer, CustomerInput } from '@/types';
 
 export default function CustomersPage() {
+  const params = useParams();
+  const locale = params.locale as string;
   const [customers, setCustomers] = useState<Customer[]>([]);
   const [loading, setLoading] = useState(true);
   const [showForm, setShowForm] = useState(false);
@@ -116,7 +119,7 @@ export default function CustomersPage() {
       <div className="max-w-4xl mx-auto p-4 space-y-4">
         <PageHeader
           title="고객 관리"
-          backHref="/ko/settings"
+          backHref={`/${locale}/settings`}
           actions={
             <Button onClick={() => setShowForm(true)}>
               <Plus className="w-4 h-4 mr-1" />

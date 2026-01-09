@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
+import { useParams } from 'next/navigation';
 import Link from 'next/link';
 import { Database, Users, Package, RefreshCw, Check, ChevronRight, Settings2 } from 'lucide-react';
 import { PageHeader, Button, Card } from '@/components/ui';
@@ -10,6 +11,8 @@ import { seedMockProducts } from '@/lib/firestore/products';
 
 export default function SettingsPage() {
   const t = useTranslations('nav');
+  const params = useParams();
+  const locale = params.locale as string;
   const [seeding, setSeeding] = useState(false);
   const [seeded, setSeeded] = useState({ customers: false, products: false });
 
@@ -58,7 +61,7 @@ export default function SettingsPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       <div className="max-w-2xl mx-auto px-4 py-6">
-        <PageHeader title={t('settings')} backHref="/" />
+        <PageHeader title={t('settings')} backHref={`/${locale}`} />
 
         {/* Master Data Management */}
         <Card className="mb-4">
@@ -68,7 +71,7 @@ export default function SettingsPage() {
           </div>
 
           <div className="space-y-2">
-            <Link href="/ko/settings/customers">
+            <Link href={`/${locale}/settings/customers`}>
               <div className="flex items-center justify-between p-3 bg-gray-50 hover:bg-gray-100 rounded-lg transition-colors">
                 <div className="flex items-center gap-3">
                   <Users className="w-5 h-5 text-gray-400" />
@@ -81,7 +84,7 @@ export default function SettingsPage() {
               </div>
             </Link>
 
-            <Link href="/ko/settings/products">
+            <Link href={`/${locale}/settings/products`}>
               <div className="flex items-center justify-between p-3 bg-gray-50 hover:bg-gray-100 rounded-lg transition-colors">
                 <div className="flex items-center gap-3">
                   <Package className="w-5 h-5 text-gray-400" />
